@@ -6,3 +6,23 @@
 .item {
     margin: 80px;
 }
+.logo {
+	text-align: center;
+	background-size: "80%";
+}
+.container a img {
+	height: 20%;
+	width: 20%;
+	text-align: center;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}

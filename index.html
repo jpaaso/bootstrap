@@ -4,8 +4,8 @@
     <meta charset="utf-8">   
     <title>Twitter Bootstrap pager with next and previous example</title>   
     <meta name="description" content="Twitter Bootstrap pager with next and previous example">  
-    <link href="lib/bootstrap.css" rel="stylesheet">  
-    <link href="lib/bootstrap-responsive.css" rel="stylesheet">  
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">  
+    <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">  
     <link href="styles.css" rel="stylesheet">  
 </head>  
 <body>  
@@ -27,5 +27,16 @@
       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
 </div>
+<!-- Le javascript  
+================================================== -->  
+<!-- Placed at the end of the document so the pages load faster -->  
+<script src="lib/jquery-1.9.1.js"></script>  
+<script src="lib/bootstrap/js/bootstrap.js"></script> 
+<script>
+  $('.carousel').carousel({
+      interval: 5000
+  });
+</script>
+
 </body>  
 </html>   

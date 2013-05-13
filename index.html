@@ -10,17 +10,24 @@
 </head>  
 <body>  
 <div class="container tabbable">
-    <a href="#home" class="logo"><img src="img/kaari-logo.svg"></a>
-    <!-- Tabs -->
-    <ul class="nav nav-pills">
-      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-      <li><a href="#profile" data-toggle="tab">Profile</a></li>
-      <li><a href="#messages" data-toggle="tab">Messages</a></li>
-      <li><a href="#settings" data-toggle="tab">Settings</a></li>
-    </ul>
-
+	<div class="row header">
+	  <div class="span4">
+			<a href="#" class="logo"><img src="img/kaari-logo.svg"></a>
+	  </div>
+	  <div class="span8 tabParent">
+		<div class="tabList">
+			<!-- Tabs -->
+			<ul class="nav nav-pills">
+			  <li class="active"><a href="#Etusivu" data-toggle="tab">Etusivu</a></li>
+			  <li><a href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
+			  <li><a href="#Toimintatapamme" data-toggle="tab">Toimintatapamme</a></li>
+			  <li><a href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
+			</ul>
+		</div>
+	  </div>
+	</div>
     <div class="tab-content">
-      <div class="tab-pane active" id="home">
+      <div class="tab-pane active" id="Etusivu">
         <div id="myCarousel" class="carousel slide sliderCustom">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -29,20 +36,31 @@
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item"><h1>1st slide</h1></div>
-            <div class="item"><h1>2st slide</h1></div>
-            <div class="item"><h1>3nd slide</h1></div>
+            <div class="active item"><h1>My&ouml;s l&auml;htev&auml; <br>asiakas on <br>mahdollisuus.</h1></div>
+            <div class="item"><h1>Tuomme <br>asiakkaat <br>luoksesi.</h1></div>
+            <div class="item"><h1>Yhdess&auml; <br>onnistumme <br>paremmin.</h1></div>
+			<div class="item"><h1>Numeroiden <br>taakse tarvitaan <br>asiakasl&auml;ht&ouml;isi&auml; <br>onnistumisia.</h1></div>
+			<div class="item"><h1>Menestyksen <br>edellytyksen&auml; <br>on tyytyv&auml;inen <br>asiakas.</h1></div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
       </div>
-    </div>
-
-  <div class="tab-pane" id="profile">...</div>
-  <div class="tab-pane" id="messages">...</div>
-  <div class="tab-pane" id="settings">...</div>
+	  <div class="tab-pane" id="Palvelumme">
+	  <h4>Palvelumme</h4>
+	  <ul><li>Myynnin kehitys</li><li>Uusasiakashankinta</li><li>Myyntipalvelut</li><li>Poistumanesto</li><li>Asiakkuuksien hallinta</li></ul>
+		  <p>
+			L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
+			Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
+			siksi kaikkien palveluidemme ydin on aina ammattitaito ja laatu.
+		  </p>
+	  </ul>
+	  
+	  </div>
+	  <div class="tab-pane" id="Toimintatapamme"> content</div>
+	  <div class="tab-pane" id="Yhteystiedot">Yhteystiedot content</div>
+	</div>
 </div>
 
 <!-- Le javascript  

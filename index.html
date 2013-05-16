@@ -2,31 +2,29 @@
 <html lang="en">   
 <head>   
     <meta charset="utf-8">   
-    <title>Twitter Bootstrap pager with next and previous example</title>   
+    <title>) kaari solutions</title>   
     <meta name="description" content="Twitter Bootstrap pager with next and previous example">  
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">  
     <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">  
     <link href="styles.css" rel="stylesheet">  
 </head>  
 <body>  
+
 <div class="container tabbable">
 	<div class="row header">
 	  <div class="span4">
-			<a href="#" class="logo"><img src="img/kaari-logo.svg"></a>
+		<a href="#Etusivu"><img src="img/kaari-logo.svg" class="img-rounded"></a>
 	  </div>
-	  <div class="span8 tabParent">
-		<div class="tabList">
-			<!-- Tabs -->
-			<ul class="nav nav-pills">
-			  <li class="active"><a href="#Etusivu" data-toggle="tab">Etusivu</a></li>
-			  <li><a href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
-			  <li><a href="#Toimintatapamme" data-toggle="tab">Toimintatapamme</a></li>
-			  <li><a href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
-			</ul>
-		</div>
+	  <div class="span8 tabList">
+		<!-- Tabs -->
+		<ul class="nav nav-pills">
+		  <li class="active"><a href="#Etusivu" data-toggle="tab">Etusivu</a></li>
+		  <li><a href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
+		  <li><a href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
+		</ul>
 	  </div>
-	</div>
-    <div class="tab-content">
+    </div>
+  <div class="tab-content">
       <div class="tab-pane active" id="Etusivu">
         <div id="myCarousel" class="carousel slide sliderCustom">
           <ol class="carousel-indicators">
@@ -36,11 +34,11 @@
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item"><h1>My&ouml;s l&auml;htev&auml; <br>asiakas on <br>mahdollisuus.</h1></div>
-            <div class="item"><h1>Tuomme <br>asiakkaat <br>luoksesi.</h1></div>
-            <div class="item"><h1>Yhdess&auml; <br>onnistumme <br>paremmin.</h1></div>
-			<div class="item"><h1>Numeroiden <br>taakse tarvitaan <br>asiakasl&auml;ht&ouml;isi&auml; <br>onnistumisia.</h1></div>
-			<div class="item"><h1>Menestyksen <br>edellytyksen&auml; <br>on tyytyv&auml;inen <br>asiakas.</h1></div>
+            <div class="active item">My&ouml;s l&auml;htev&auml; asiakas on mahdollisuus.</div>
+            <div class="item">Tuomme asiakkaat luoksesi.</div>
+            <div class="item">Yhdess&auml; onnistumme paremmin.</div>
+			<div class="item">Numeroiden taakse tarvitaan asiakasl&auml;ht&ouml;isi&auml; onnistumisia.</div>
+			<div class="item">Menestyksen edellytyksen&auml; on tyytyv&auml;inen asiakas.</div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -48,25 +46,31 @@
         </div>
       </div>
 	  <div class="tab-pane" id="Palvelumme">
-		  <div class="row header">
+		  <div class="row header middleArea">
 			<div class="span4">
 			  <h4>Palvelumme</h4>
 			  <ul><li>Myynnin kehitys</li><li>Uusasiakashankinta</li><li>Myyntipalvelut</li><li>Poistumanesto</li><li>Asiakkuuksien hallinta</li></ul>
 			</div>
 			<div class="span8">
-			  <p>
+			  <blockquote>
 				L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
 				Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
 				siksi kaikkien palveluidemme ydin on aina ammattitaito ja laatu.
-			  </p>
+			  </blockquote>
 			</div>
 	      </div>
 	  </div>
-      <div class="tab-pane" id="Toimintatapamme"> content</div>
-      <div class="tab-pane" id="Yhteystiedot">Yhteystiedot content</div>
-	</div>
+      <div class="tab-pane" id="Yhteystiedot">
+		<div class="middleArea">
+			Yhteystiedot content
+		</div>
+	  </div>
+  </div>
+  <footer id="footer">
+	<p>&copy; Kaari Solutions 2013</p>
+  </footer>
 </div>
-
+<!--div id="footer" class="container"><p>&copy; Kaari Solutions 2013</p></div-->
 <!-- Le javascript  
 ================================================== -->  
 <!-- Placed at the end of the document so the pages load faster -->  

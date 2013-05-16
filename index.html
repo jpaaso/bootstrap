@@ -20,7 +20,7 @@
 		<ul class="nav nav-pills">
 		  <li class="active"><a href="#Etusivu" data-toggle="tab">Etusivu</a></li>
 		  <li><a href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
-		  <li><a href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
+		  <li><a id="yhteystiedotTab" href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
 		</ul>
 	  </div>
     </div>
@@ -34,24 +34,29 @@
           </ol>
           <!-- Carousel items -->
           <div class="carousel-inner">
-            <div class="active item">My&ouml;s l&auml;htev&auml; asiakas on mahdollisuus.</div>
-            <div class="item">Tuomme asiakkaat luoksesi.</div>
-            <div class="item">Yhdess&auml; onnistumme paremmin.</div>
-			<div class="item">Numeroiden taakse tarvitaan asiakasl&auml;ht&ouml;isi&auml; onnistumisia.</div>
-			<div class="item">Menestyksen edellytyksen&auml; on tyytyv&auml;inen asiakas.</div>
+            <div class="active item"><h1>My&ouml;s l&auml;htev&auml; asiakas on mahdollisuus.</h1></div>
+            <div class="item"><h1>Tuomme asiakkaat luoksesi.</h1></div>
+            <div class="item"><h1>Yhdess&auml; onnistumme paremmin.</h1></div>
+			<div class="item"><h1>Numeroiden taakse tarvitaan asiakasl&auml;ht&ouml;isi&auml; onnistumisia.</h1></div>
+			<div class="item"><h1>Menestyksen edellytyksen&auml; on tyytyv&auml;inen asiakas.</h1></div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+		<div>
+			<a id="otaYhteyttaBtn" href="#Yhteystiedot" class="btn btn-large btn-primary pull-right" type="button">
+				Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
+			</a>
+		</div>
       </div>
 	  <div class="tab-pane" id="Palvelumme">
 		  <div class="row header middleArea">
-			<div class="span4">
+			<div class="span4 textBox">
 			  <h4>Palvelumme</h4>
 			  <ul><li>Myynnin kehitys</li><li>Uusasiakashankinta</li><li>Myyntipalvelut</li><li>Poistumanesto</li><li>Asiakkuuksien hallinta</li></ul>
 			</div>
-			<div class="span8">
+			<div class="span8 textBox">
 			  <blockquote>
 				L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
 				Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
@@ -62,7 +67,9 @@
 	  </div>
       <div class="tab-pane" id="Yhteystiedot">
 		<div class="middleArea">
-			Yhteystiedot content
+			<div class="textBox">
+				Yhteystiedot content
+			</div>
 		</div>
 	  </div>
   </div>
@@ -79,6 +86,9 @@
 <script>
   $('.carousel').carousel({
       interval: 5000
+  });
+  $('#otaYhteyttaBtn').click(function(){
+    $('#yhteystiedotTab').trigger('click');
   });
 </script>
 

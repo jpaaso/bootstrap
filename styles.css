@@ -16,9 +16,9 @@ body { background-color:#F2F2F2; }
 }
 .middleArea {
 	width: auto;
-	min-height: 260px;
+	min-height: 300px;
 	height: auto !important;
-    height: 260px; 
+    height: 300px; 
 }
 .sliderCustom {
     min-height:100px;
@@ -26,22 +26,29 @@ body { background-color:#F2F2F2; }
     height:100px;
 }
 .carousel {
-	background-color:#E0ECF8;/*#E0ECF8;*/
+	background-color:#D8D8D8;/*#E0ECF8;*/
 }
 .carousel-inner {
 	width: auto;
-	min-height: 240px;
+	min-height: 280px;
 	height: auto !important;
-    height: 240px; 
+    height: 280px; 
 }
 .item {
-    margin: 80px;
-	font-size:40px;
-	font-style:italic;
+	/*margin-top: 10%;
+	text-align:center;*/
+    margin: 70px;
+	/*font-size:40px;
+	font-style:italic;*/
 }
+/*
+.textBox {
+	padding: 20px;
+	
+}*/
 #footer { 
 	color:#333;
 	/*background-color:#e4e4e4;*/
-	padding-top:35px;
+	padding-top:55px;
 	padding-left:15px;
 }

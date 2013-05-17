@@ -41,11 +41,12 @@ body { background-color:#F2F2F2; }
 	/*font-size:40px;
 	font-style:italic;*/
 }
-/*
+.textArea {
+	text-align:middle;
+}
 .textBox {
-	padding: 20px;
-	
-}*/
+	margin-top:50px;
+}
 #footer { 
 	color:#333;
 	/*background-color:#e4e4e4;*/

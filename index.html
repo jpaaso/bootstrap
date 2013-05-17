@@ -3,17 +3,21 @@
 <head>   
     <meta charset="utf-8">   
     <title>) kaari solutions</title>   
-    <meta name="description" content="Twitter Bootstrap pager with next and previous example">  
+    <meta name="description" content="Kaari Solutions company site.">  
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">  
     <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">  
     <link href="styles.css" rel="stylesheet">  
+	<link rel="shortcut icon" href="img/kaari-icon.png">
+	<!--link rel="apple-touch-icon" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon.png">  
+    <link rel="apple-touch-icon" sizes="72x72" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-72x72.png">  
+    <link rel="apple-touch-icon" sizes="114x114" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-114x114.png"--> 
 </head>  
 <body>  
 
 <div class="container tabbable">
-	<div class="row header">
+	<div class="row  ">
 	  <div class="span4">
-		<a href="#Etusivu"><img src="img/kaari-logo.svg" class="img-rounded"></a>
+		<a href="#Etusivu"><img src="img/kaari-logo-200.png" class="img-rounded"></a>
 	  </div>
 	  <div class="span8 tabList">
 		<!-- Tabs -->
@@ -25,7 +29,10 @@
 	  </div>
     </div>
   <div class="tab-content">
-      <div class="tab-pane active" id="Etusivu">
+	  <!-- --------------- -->
+      <!--     Etusivu     -->
+	  <!-- --------------- -->
+	  <div class="tab-pane active" id="Etusivu">
         <div id="myCarousel" class="carousel slide sliderCustom">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -50,13 +57,16 @@
 			</a>
 		</div>
       </div>
+	  <!-- ------------------ -->
+      <!--     Palvelumme     -->
+	  <!-- ------------------ -->
 	  <div class="tab-pane" id="Palvelumme">
-		  <div class="row header middleArea">
-			<div class="span4 textBox">
+		  <div class="row  middleArea textArea">
+			<div class="span3 offset1 textBox">
 			  <h4>Palvelumme</h4>
 			  <ul><li>Myynnin kehitys</li><li>Uusasiakashankinta</li><li>Myyntipalvelut</li><li>Poistumanesto</li><li>Asiakkuuksien hallinta</li></ul>
 			</div>
-			<div class="span8 textBox">
+			<div class="span4 offset2 textBox">
 			  <blockquote>
 				L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
 				Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
@@ -65,10 +75,23 @@
 			</div>
 	      </div>
 	  </div>
+	  <!-- -------------------- -->
+      <!--     Yhteystiedot     -->
+	  <!-- -------------------- -->
       <div class="tab-pane" id="Yhteystiedot">
-		<div class="middleArea">
-			<div class="textBox">
-				Yhteystiedot content
+		<div class="middleArea textArea">
+			<div class="span5 offset1 textBox">
+				<address>
+				  <strong>Kaari Solutions Oy</strong><br>
+				  Tikkurilantie 11 22 A<br>
+				  01234 Vantaa, Finland<br>
+				  <abbr title="Phone">P:</abbr> +358 40 123 4567
+				</address>
+				 
+				<address>
+				  <strong>Harri Pellikka </strong><br>
+				  <a href="mailto:#">harri.pellikka (a) kaarisolutions.com</a>
+				</address>
 			</div>
 		</div>
 	  </div>

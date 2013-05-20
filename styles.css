@@ -7,8 +7,7 @@ body {
 .container {
 	padding: 45px 20px 20px 20px; /* trbl */
 	background-color:#fff;/*#F2F2F2;*/
-	margin-top: 10px;
-	border-radius:25px;
+	border-radius:15px;
 	box-shadow: 2px 2px 2px #888;
 }
 
@@ -68,7 +67,11 @@ body {
 	margin-top:50px;
 }
 .adBox {
-	/*border: solid 1px #ccc;*/
+	height: 150px;
+    min-height: 150px;
+    padding-top: 30px;
+    margin-top: 15px;
+    /*border: 1px solid #ccc;*/
 }
 #footer { 
 	color:#333;

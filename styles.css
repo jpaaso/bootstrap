@@ -1,4 +1,9 @@
-body { background-color:#F2F2F2; }
+body { 
+	background-color:#F2F2F2; 
+	font-family: HelveticaLight, Helvetica, Arial;
+	font-size:19px;
+	color: rgb(70, 68, 64);/*#424242;*/
+}
 .container {
 	padding: 45px 20px 20px 20px; /* trbl */
 	background-color:#fff;/*#F2F2F2;*/
@@ -25,8 +30,23 @@ body { background-color:#F2F2F2; }
     height:auto !important;
     height:100px;
 }
+/* blue: #12A5F4 */
 .carousel {
-	background-color:#D8D8D8;/*#E0ECF8;*/
+	background-image: -moz-linear-gradient(67% 2% -153deg, #00bdde 1%, #00528c 99%);
+	background-image: -webkit-gradient(linear, 67% 2%, 1% 98%, color-stop(0.01, #00bdde), color-stop(0.99, #00528c));
+	background-image: -webkit-linear-gradient(-153deg, #00bdde 1%, #00528c 99%);
+	background-image: -o-linear-gradient(-153deg, #00bdde 1%, #00528c 99%);
+	background-image: -ms-linear-gradient(-153deg, #00bdde 1%, #00528c 99%);
+	background-image: linear-gradient(-153deg, #00bdde 1%, #00528c 99%);
+	min-height: 340px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff00bdde,endColorstr=#ff00528c,GradientType=0)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff00bdde,endColorstr=#ff00528c,GradientType=0);
+	position: relative;
+}
+.carousel p {
+	color:#fff;
+	font-size: 50px;
+	text-transform:uppercase;
 }
 .carousel-inner {
 	width: auto;
@@ -46,6 +66,9 @@ body { background-color:#F2F2F2; }
 }
 .textBox {
 	margin-top:50px;
+}
+.adBox {
+	/*border: solid 1px #ccc;*/
 }
 #footer { 
 	color:#333;

@@ -17,15 +17,15 @@
 	<div class="container tabbable">
 		<div class="row-fluid  ">
 			<div class="span4">
-				<a href="#Etusivu"><img src="img/kaari-logo-200.png" class="img-rounded"></a>
+				<a id="logoLink" href="#Etusivu"><img id="logo" src="img/kaari-logo-200.png" class="img-rounded"></a>
 			</div>
 			<div class="span8 tabList">
 				<!-- Tabs -->
 				<ul class="nav nav-pills">
-					<li class="active"><a href="#Etusivu" data-toggle="tab">Etusivu</a></li>
-					<li><a href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
+					<li class="active"><a id="etusivuTab" href="#Etusivu" data-toggle="tab">Etusivu</a></li>
+					<li><a id="palvelummeTab" href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
 					<li><a id="yhteystiedotTab" href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
-					<li><a id="otaYhteytta" href="#OtaYhteytta" data-toggle="tab">Ota yhteyttä</a></li>
+					<li><a id="otaYhteyttaTab" href="#OtaYhteytta" data-toggle="tab">Ota yhteyttä</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,35 +45,35 @@
 						<div class="active item">
 							<p>My&ouml;s l&auml;htev&auml; <br>asiakas on <br>mahdollisuus</p>
 							<br><br><br>
-							<a id="otaYhteyttaBtn" class="btn btn-large btn-primary pull-right" type="button">
+							<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
 								Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
 							</a>
 						</div>
 						<div class="item">
 							<p>Tuomme <br>asiakkaat <br>luoksesi</p>
 							<br><br><br>
-							<a id="otaYhteyttaBtn" class="btn btn-large btn-primary pull-right" type="button">
+							<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
 								Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
 							</a>
 						</div>
 						<div class="item">
 							<p>Yhdess&auml; <br>onnistumme <br>paremmin</p>
 							<br><br><br>
-							<a id="otaYhteyttaBtn" class="btn btn-large btn-primary pull-right" type="button">
+							<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
 								Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
 							</a>
 						</div>
 						<div class="item">
 							<p>Numeroiden taakse tarvitaan <br>asiakasl&auml;ht&ouml;isi&auml; <br>onnistumisia</p>
-
-							<a id="otaYhteyttaBtn" class="btn btn-large btn-primary pull-right" type="button">
+							
+							<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
 								Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
 							</a>
 						</div>
 						<div class="item">
 							<p>Menestyksen edellytyksen&auml; <br>on tyytyv&auml;inen <br>asiakas</p>
 							<br><br><br>
-							<a id="otaYhteyttaBtn" class="btn btn-large btn-primary pull-right" type="button">
+							<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
 								Ota yhteytt&auml; - laitetaan <br>yrityksesi myynti kuntoon!
 							</a>
 						</div>
@@ -84,97 +84,112 @@
 				</div>
 				<div>
 					<div class="row-fluid">
-						<div class="span4 adBox">
-							<p>Pienenn&auml;mme yrityksesi asiakaspoistumaa laadukkaiden ja tehokkaiden toimenpiteiden avulla.</p>
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+						  	<a id="pienennammeBox" href="#Palvelumme"></a>
+							<p>Pienenn&auml;mme yrityksesi asiakaspoistumaa.</p>
+						  </div>
 						</div>
-						<div class="span4 adBox">
-							<a href="#Etusivu"><img src="img/kaari-logo-200.png" class="img-rounded"></a>
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+							<img src="img/kaari-logo-200.png" class="img-rounded">
+						  </div>
 						</div>
-						<div class="span4 adBox">
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+						  	<a id="tavoitammeBox" href="#Palvelumme"></a>
 							<p>Laadukkaalla telemarkkinoinnilla tavoitamme asiakkaasi kustannustehokkaasti.</p>
+						  </div>
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span4 adBox">
-							<a href="#Etusivu"><img src="img/kaari-logo-200.png" class="img-rounded"></a>
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+						    <img src="img/kaari-logo-200.png" class="img-rounded">
+						  </div>
 						</div>
-						<div class="span4 adBox">
-							<P>R&auml;&auml;t&auml;l&ouml;imme palvelumme aina yrityksenne tarpeisiin sopiviksi.</p>
-							</div>
-							<div class="span4 adBox">
-								<a href="#Etusivu"><img src="img/kaari-logo-200.png" class="img-rounded"></a>
-							</div>
-						</div>	  
-					</div>
-				</div>
-				<!-- ------------------ -->
-				<!--     Palvelumme     -->
-				<!-- ------------------ -->
-				<div class="tab-pane" id="Palvelumme">
-					<div class="row-fluid  middleArea">
-						<div class="span3 offset1 textBox">
-							<h4>Palvelumme</h4>
-							<ul><li>Myynnin kehitys</li><li>Uusasiakashankinta</li><li>Myyntipalvelut</li><li>Poistumanesto</li><li>Asiakkuuksien hallinta</li></ul>
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+						  	<a id="raataloimmeBox" href="#Palvelumme"></a>
+							<p>R&auml;&auml;t&auml;l&ouml;imme palvelumme aina yrityksenne tarpeisiin sopiviksi.</p>
+						  </div>
 						</div>
-						<div class="span4 offset2 textBox">
-							<blockquote>
-								L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
-								Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
-								siksi kaikkien palveluidemme ydin on aina ammattitaito ja laatu.
-							</blockquote>
-						</div>
-					</div>
-				</div>
-				<!-- -------------------- -->
-				<!--     Yhteystiedot     -->
-				<!-- -------------------- -->
-				<div class="tab-pane" id="Yhteystiedot">
-					<div class="middleArea">
-						<div class="span5 offset1 textBox">
-							<address>
-								<strong>Kaari Solutions Oy</strong><br>
-								Tikkurilantie 11 22 A<br>
-								01234 Vantaa, Finland<br>
-								<abbr title="Phone">P:</abbr> +358 40 123 4567
-							</address>
-
-							<address>
-								<strong>Harri Pellikka </strong><br>
-								<a href="mailto:#">harri.pellikka (a) kaarisolutions.com</a>
-							</address>
-						</div>
-					</div>
-				</div>
-				<!-- -------------------- -->
-				<!--     Ota yhteytta     -->
-				<!-- -------------------- -->
-				<div class="tab-pane" id="OtaYhteytta">
-					<div class="middleArea">
-						<div class="span5 offset1 textBox">
-							<form class="well span8">
-							  <div class="row">
-									<div class="span3">
-										<input type="text" class="span3" placeholder="Nimi">
-										<input type="text" class="span3" placeholder="Email">
-										<input type="text" class="span3" placeholder="Aihe">
-									</div>
-									<div class="span5">
-										<textarea name="message" id="message" class="input-xlarge span5" rows="10" placeholder="Viesti">
-										</textarea>
-									</div>
-								
-									<button type="submit" class="btn btn-primary pull-right">Send</button>
-								</div>
-							</form>
+						<div class="span4 adBoxOuter">
+						  <div class="box adBox">
+							<img src="img/kaari-logo-200.png" class="img-rounded">
+						  </div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<footer id="footer">
-				<p>&copy; Kaari Solutions 2013</p>
-			</footer>
+			<!-- ------------------ -->
+			<!--     Palvelumme     -->
+			<!-- ------------------ -->
+			<div class="tab-pane" id="Palvelumme">
+				<div class="box largeBox">
+					<h2>Palvelumme</h2>
+					<ul>
+						<li>Myynnin kehitys</li>
+						<li>Uusasiakashankinta</li>
+						<li>Myyntipalvelut</li>
+						<li>Poistumanesto</li>
+						<li>Asiakkuuksien hallinta</li>
+					</ul>
+					<p>
+						L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
+						Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
+						siksi kaikkien palveluidemme ydin on aina ammattitaito ja laatu.
+					</p>
+				</div>
+			</div>
+			<!-- -------------------- -->
+			<!--     Yhteystiedot     -->
+			<!-- -------------------- -->
+			<div class="tab-pane" id="Yhteystiedot">
+				<div class="box largeBox">
+					<h2>Yhteystiedot</h2>
+					<address>
+						<strong>Kaari Solutions Oy</strong><br>
+						Tikkurilantie 11 22 A<br>
+						01234 Vantaa, Finland<br>
+						<abbr title="Phone">P:</abbr> +358 40 123 4567
+					</address>
+
+					<address>
+						<strong>Harri Pellikka </strong><br>
+						<a href="mailto:#">harri.pellikka (a) kaarisolutions.com</a>
+					</address>
+				</div>
+			</div>
+			<!-- -------------------- -->
+			<!--     Ota yhteytta     -->
+			<!-- -------------------- -->
+			<div class="tab-pane" id="OtaYhteytta">
+				<div class="box largeBox">
+					<h2>Ota yhteytt&auml;</h2>
+					<form class="span8">
+					  <div class="row">
+							<div class="span3">
+								<input type="text" class="span3" placeholder="Nimi">
+								<input type="text" class="span3" placeholder="Email">
+								<input type="text" class="span3" placeholder="Aihe">
+							</div>
+							<div class="span5">
+								<textarea name="message" id="message" class="input-xlarge span5" rows="8" placeholder="Viesti">
+								</textarea>
+							</div>
+						
+							<button type="submit" class="btn btn-primary pull-right">L&auml;het&auml;</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
-		<!--div id="footer" class="container"><p>&copy; Kaari Solutions 2013</p></div-->
+		<footer id="footer">
+			<p>&copy; Kaari Solutions 2013</p>
+		</footer>
+	</div>
+	<!--div id="footer" class="container"><p>&copy; Kaari Solutions 2013</p></div-->
 <!-- Le javascript  
 	================================================== -->  
 	<!-- Placed at the end of the document so the pages load faster -->  
@@ -184,8 +199,23 @@
 	$('.carousel').carousel({
 		interval: 5000
 	});
-	$('#otaYhteyttaBtn').click(function(){
-		$('#yhteystiedotTab').trigger('click');
+	$('.otaYhteyttaBtn').click(function(){
+		$('#otaYhteyttaTab').trigger('click');
+	});
+	$('#logoLink').click(function(){
+		$('#etusivuTab').trigger('click');
+	});
+	$('#logoLink').click(function(){
+		$('#etusivuTab').trigger('click');
+	});
+	$('#pienennammeBox').click(function(){
+		$('#palvelummeTab').trigger('click');
+	});
+	$('#tavoitammeBox').click(function(){
+		$('#palvelummeTab').trigger('click');
+	});
+	$('#raataloimmeBox').click(function(){
+		$('#palvelummeTab').trigger('click');
 	});
 	</script>
 

@@ -1,14 +1,19 @@
 body { 
 	/*background-color:#F2F2F2; */
 	/*font-family: HelveticaLight, Helvetica, Arial;*/
-	font-family: Muli, 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Tahoma, Arial, sans-serif;
+	/*font-family: Muli, 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Tahoma, Arial, sans-serif;*/
+	font-family: "Avenir LT W01 35 Light", sans-serif;
 	font-size:18px;
 	color: rgb(70, 68, 64);/*#424242;*/
 }
-
+h1 {
+	color: #12A5F4;
+}
+h2 {
+	color: #004771;
+}
 /* blue: #12A5F4 */
 h1, h2, h3, h4, h5 {
-	color: #12A5F4;
 	font-weight:normal;
 	margin: 20px 0px 40px 0px;
 }
@@ -46,8 +51,9 @@ h1, h2, h3, h4, h5 {
 }
 .carousel p {
 	color:#fff;
-	font-size: 50px;
+	font-size: 40px;
 	text-transform:uppercase;
+	line-height: 120%;
 }
 .carousel-inner {
 	width: auto;
@@ -56,9 +62,8 @@ h1, h2, h3, h4, h5 {
     height: 300px; 
 }
 .item {
-    margin: 70px;
+	margin: 70px 20px 20px 70px;
 }
-
 .box {
 	background-color:#F5F5F5;
 }
@@ -76,10 +81,15 @@ h1, h2, h3, h4, h5 {
     margin-top: 10px;
 	text-transform:uppercase;
 	position:relative;
+	color: #004771;
+	font-size: 20px
 }
 
 .adBox:hover {
 	background-color:#E0ECF8;
+}
+.adBox p {
+   padding: 15px 0px;
 }
 .adBox a {
     position:absolute;

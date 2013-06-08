@@ -19,12 +19,8 @@ h1, h2, h3, h4, h5 {
 }
 .container {
 	margin-top: 3px;
-	padding: 45px 20px 0px 20px; /* trbl */
+	padding: 45px 20px 40px 20px; /* trbl */
 	background-color:#fff;/*#F2F2F2;*/
-	/*border-radius:15px;*/
-	/*-webkit-box-shadow: 2px 2px 2px #888, -2px 2px 2px #888;  
-	-moz-box-shadow: 2px 2px 2px #888, -2px 2px 2px #888;
-	box-shadow: 2px 2px 2px #888, -2px 2px 2px #888;*/
 }
 
 #logo {
@@ -74,7 +70,7 @@ h1, h2, h3, h4, h5 {
     /*height: 350px; */
     padding: 30px 30px;
 }
-.adBox {
+.tile {
 	height: 100px;
     min-height: 100px;
     padding: 20px 30px;
@@ -85,13 +81,13 @@ h1, h2, h3, h4, h5 {
 	font-size: 20px
 }
 
-.adBox:hover {
+.tile:hover {
 	background-color:#E0ECF8;
 }
-.adBox p {
-   padding: 15px 0px;
+.tile p {
+   padding: 0px 0px;
 }
-.adBox a {
+.tile a {
     position:absolute;
     width:100%;
     height:100%;
@@ -106,8 +102,5 @@ h1, h2, h3, h4, h5 {
 #footer { 
 	color:#333;
 	font-size:14px;
-	/*background-color:#e4e4e4;
-	padding-top:55px;
-	padding-left:15px;*/
 	margin: 55px 0px 20px 15px;
 }

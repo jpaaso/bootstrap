@@ -5,8 +5,8 @@
 	<title>Kaari Solutions</title>   
 	<meta name="description" content="Kaari Solutions company site.">  
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">  
-	<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">  
+	<link href="lib/bootstrap.css" rel="stylesheet">  
+	<link href="lib/bootstrap-responsive.css" rel="stylesheet">  
 	<link href="styles.css" rel="stylesheet">  
 	<link rel="shortcut icon" href="img/kaari-icon.png">
 	<!--link rel="apple-touch-icon" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon.png">  
@@ -89,7 +89,7 @@
 								<a id="pienennammeBox" href="#Palvelumme"></a>
 								<p>
 									Pienenn&auml;mme yrityksesi asiakaspoistumaa.
-									<br><br><br><br>
+									<br><br>
 								</p>
 								<img src="img/customerService.jpg">
 							</div>
@@ -101,7 +101,6 @@
 								<p>
 									<br>
 									R&auml;&auml;t&auml;l&ouml;imme palvelumme aina yrityksenne tarpeisiin sopiviksi.
-									<br><br>
 								</p>
 							</div>
 						</div>
@@ -110,8 +109,6 @@
 								<a id="tavoitammeBox" href="#Palvelumme"></a>
 								<p>
 									Laadukkaalla telemarkkinoinnilla tavoitamme asiakkaasi kustannustehokkaasti.
-									<br>
-									<br>
 								</p>
 								<img src="img/savings.jpg">
 							</div>
@@ -182,6 +179,13 @@
 			<div class="tab-pane" id="OtaYhteytta">
 				<div class="box largeBox">
 					<h2>Ota yhteytt&auml;</h2>
+					<!--form class="email" action="mailer.php" method="post">
+						<input type="text" name="name" placeholder="Nimi"/><br>
+						<input type="text" name="email" placeholder="Email"/><br>
+						<input type="text" name="subject" placeholder="Aihe"/><br>
+						<textarea name="message" placeholder="Viesti"></textarea></p>
+						<input class="send" type="submit" value="Send">
+					</form-->
 					<?php
 				        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
 						elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  		
@@ -234,7 +238,7 @@
 	================================================== -->  
 	<!-- Placed at the end of the document so the pages load faster -->  
 	<script src="lib/jquery-1.9.1.js"></script>  
-	<script src="lib/bootstrap/js/bootstrap.js"></script> 
+	<script src="lib/bootstrap.js"></script> 
 	<script>
 	$('.carousel').carousel({
 		interval: 5000

@@ -1,6 +1,6 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "juho.paaso@gmail.com";
+$myemail = "info@kaarisolutions.fi";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['name'], "Enter your name");
@@ -11,7 +11,7 @@ $message = check_input($_POST['message'], "Write your message");
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
-show_error("E-mail address not valid");
+	show_error("E-mail address not valid");
 }
 /* Let's prepare the message for the e-mail */
 $message = "
@@ -29,35 +29,35 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: thanks.html');
+header('Location: index.html');
 exit();
 
 /* Functions we used */
 function check_input($data, $problem='')
 {
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-if ($problem && strlen($data) == 0)
-{
-show_error($problem);
-}
-return $data;
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	if ($problem && strlen($data) == 0)
+	{
+		show_error($problem);
+	}
+	return $data;
 }
 
 function show_error($myError)
 {
-?>
-<html>
-<body>
+	?>
+	<html>
+	<body>
 
-<p>Please correct the following error:</p>
-<strong><?php echo $myError; ?></strong>
-<p>Hit the back button and try again</p>
+		<p>Please correct the following error:</p>
+		<strong><?php echo $myError; ?></strong>
+		<p>Hit the back button and try again</p>
 
-</body>
-</html>
-<?php
-exit();
+	</body>
+	</html>
+	<?php
+	exit();
 }
 ?>

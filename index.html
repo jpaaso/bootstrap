@@ -25,7 +25,7 @@
 					<li class="active"><a id="etusivuTab" href="#Etusivu" data-toggle="tab">Etusivu</a></li>
 					<li><a id="palvelummeTab" href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
 					<li><a id="yhteystiedotTab" href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
-					<li><a id="otaYhteyttaTab" href="#OtaYhteytta" data-toggle="tab">Ota yhteyttä</a></li>
+					<li><a id="otaYhteyttaTab" href="#OtaYhteytta" data-toggle="tab">Ota yhteytt&auml;</a></li>
 				</ul>
 			</div>
 		</div>
@@ -139,8 +139,49 @@
 			<!-- ------------------ -->
 			<div class="tab-pane" id="Palvelumme">
 				<div class="box largeBox">
-					<h2>Palvelumme</h2>
-					<ul>
+					<div class="tabbable"> <!-- Only required for left/right tabs -->
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Poistumanesto</a></li>
+							<li><a href="#tab2" data-toggle="tab">Telemarkkinointi</a></li>
+							<li><a href="#tab3" data-toggle="tab">Myynnin kehitys</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<p>
+									<ul>
+										<li>Moni yritys n&auml;kee poistuvat asiakkaat vain negatiivisina lukuina.</li>
+										<li>Laadukkaalla poistumanestolla pystymme muuttamaan yrityksesi negatiiviset luvut tuottaviksi sek&auml; pitk&auml;kestoisiksi asiakassuhteiksi.</li>
+										<li>L&auml;htevien asiakkaiden palaute j&auml;&auml; usein huomioimatta, vaikka se on arvokasta ja kohdistuu usein yrityksen todellisiin kipupisteisiin.</li>
+										<li>Kuuntelemalla ja analysoimalla n&auml;m&auml; arvokkaat palautteet tarjoamme yrityksellesi ty&ouml;kalut pitk&auml;j&auml;nteiseen liiketoiminnan kehitt&auml;miseen.</li>
+										<li>Ota yhteytt&auml;! Nykyisen asiakkaan pit&auml;minen on halvempaa kuin uuden hankkiminen.</li>
+									</ul>
+								</p>
+							</div>
+							<div class="tab-pane" id="tab2">
+								<p>
+									<ul>
+										<li>Asiakashankinta sek&auml; vanhojen asiakassuhteiden syvent&auml;minen miellet&auml;&auml;n monessa yrityksess&auml; viel&auml; t&auml;n&auml;kin p&auml;iv&auml;n&auml; kalliiksi ja hankalaksi toteuttaa.</li>
+										<li>Meid&auml;n kanssamme toteutettu telemarkkinointi on helppo sek&auml; kustannustehokas keino tavoittaa yrityksesi vanhat ja uudet asiakkaat.</li>
+										<li>Usein yritykset kokevat telemarkkinoinnin aggressiivisena ja ep&auml;mukavana tapana l&auml;hesty&auml; asiakasta.</li>
+										<li>Juuri sinun yrityksellesi r&auml;&auml;t&auml;l&ouml;idyss&auml; oikein toteutetussa telemarkkinoinnissa kohtaavat niin hyv&auml;t tulokset kuin miellytt&auml;v&auml; asiakaskokemuskin.</li>
+										<li>Ota yhteytt&auml;! Laitetaan yhdess&auml; yrityksesi myynti kasvuun.</li>
+									</ul>
+								</p>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<p>
+									<ul>
+										<li>Myynnin kehitys on asia jota mink&auml;&auml;n kokoisen yrityksen ei tulisi unohtaa, vaikka juuri nyt menisikin hyvin.</li>
+										<li>Kannamme huolen yrityksesi tuesta. Kanssamme toteutettu r&auml;&auml;t&auml;l&ouml;ity kehitysprojekti tai vaikkapa pitk&auml;j&auml;nteisempi yhteisty&ouml; takaa yrityksellesi liiketoiminnan kasvua t&auml;n&auml;&auml;n ja tulevaisuudessa.</li>
+										<li>Yrityksen sis&auml;lt&auml; on vaikea n&auml;hd&auml; kauas.</li>
+										<li>Vahvan myyntiosaamisen ja ulkopuolisen n&auml;kemyksen avulla tarjoamme yrityksellesi avaimet myynnin kehitt&auml;miseen. Tarvittaessa autamme myyntikoneistosi viritt&auml;misess&auml; k&auml;dest&auml; pit&auml;en.</li>
+										<li>Ota yhteytt&auml;! Maksimoidaan yrityksesi myyntipotentiaali.</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--ul>
 						<li>Myynnin kehitys</li>
 						<li>Uusasiakashankinta</li>
 						<li>Myyntipalvelut</li>
@@ -151,7 +192,7 @@
 						L&auml;ht&ouml;kohtamme on aina tuloksellisen myynnin rakentaminen kustannustehokkaasti, yrityksesi asiakkaita ajatellen. 
 						Kaikki palvelumme r&auml;&auml;t&auml;l&ouml;id&auml;&auml;n aina yrityksenne tarpeiden mukaisiksi. Myynti on meille intohimo, 
 						siksi kaikkien palveluidemme ydin on aina ammattitaito ja laatu.
-					</p>
+					</p-->
 				</div>
 			</div>
 			<!-- -------------------- -->
@@ -179,14 +220,22 @@
 			<div class="tab-pane" id="OtaYhteytta">
 				<div class="box largeBox">
 					<h2>Ota yhteytt&auml;</h2>
-					<!--form class="email" action="mailer.php" method="post">
-						<input type="text" name="name" placeholder="Nimi"/><br>
-						<input type="text" name="email" placeholder="Email"/><br>
-						<input type="text" name="subject" placeholder="Aihe"/><br>
-						<textarea name="message" placeholder="Viesti"></textarea></p>
-						<input class="send" type="submit" value="Send">
-					</form-->
-					<?php
+					<form class="row form" action="mailer.php" method="post">
+						<div class="span3">
+							<input type="text" name="name" placeholder="Nimi"/><br>
+							<input type="text" name="email" placeholder="Email"/><br>
+							<input type="text" name="subject" placeholder="Aihe"/><br>
+						</div>
+						<div class="span5">
+							<textarea name="message" placeholder="Viesti" class="input-xlarge span5" rows="8" ></textarea></p>
+							<button name="save" id="save" type="submit" class="btn btn-primary pull-right">
+								L&auml;het&auml;
+							</button>
+							
+						</div>
+					</form>
+					<!--input class="send" type="submit" value="L&auml;het&auml;" class="btn btn-primary pull-right"-->
+					<!--?php
 				        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
 						elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  		
 					?>  
@@ -207,7 +256,7 @@
 								</button>
 							</div>
 						</fieldset>
-					</form>
+					</form-->
 					<!--form method="POST" action="contactForm.php">
 						<fieldset>
 							<div class="row form form-horizontal">

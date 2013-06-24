@@ -36,12 +36,22 @@ h1, h2, h3, h4, h5 {
 	min-height: 100px;
 	margin: -35px 0px 0px 0px;
 }
-.nav-tabs, .nav-pills {
+.tabList .nav-pills {
    	margin: 10px 0px 30px 0px; /* trbl */
 	text-transform:uppercase;
 }
+.problem {
+	font-style:italic;
+	margin-top: 20px;
 
-.carousel {
+}
+.solution {
+	/*text-align:right;*/
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+.blueGrad {
 	background-image: -moz-linear-gradient(67% 2% -153deg, #00bdde 1%, #00528c 99%);
 	background-image: -webkit-gradient(linear, 67% 2%, 1% 98%, color-stop(0.01, #00bdde), color-stop(0.99, #00528c));
 	background-image: -webkit-linear-gradient(-153deg, #00bdde 1%, #00528c 99%);
@@ -53,9 +63,9 @@ h1, h2, h3, h4, h5 {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff00bdde,endColorstr=#ff00528c,GradientType=0);
 	position: relative;
 	margin-bottom: 0px;
+	color:#fff;
 }
 .carousel p {
-	color:#fff;
 	font-size: 40px;
 	text-transform:uppercase;
 	line-height: 120%;

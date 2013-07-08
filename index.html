@@ -21,7 +21,7 @@
 			</div>
 			<div class="span8 tabList">
 				<!-- Tabs -->
-				<ul class="nav nav-pills">
+				<ul id="tabs" class="nav nav-pills">
 					<li class="active"><a id="etusivuTab" href="#Etusivu" data-toggle="tab">Etusivu</a></li>
 					<li><a id="palvelummeTab" href="#Palvelumme" data-toggle="tab">Palvelumme</a></li>
 					<li><a id="yhteystiedotTab" href="#Yhteystiedot" data-toggle="tab">Yhteystiedot</a></li>
@@ -114,39 +114,21 @@
 							</div>
 						</div>
 					</div>
-					<!--div class="row">
-						<div class="span4 tileOuter">
-							<div class="box tileImg">
-								<img src="img/customerService.jpg">
-							</div>
-						</div>
-						<div class="span4 tileOuter">
-							<div class="box tileTxt">
-								<a id="raataloimmeBox" href="#Palvelumme"></a>
-								<p>R&auml;&auml;t&auml;l&ouml;imme palvelumme aina yrityksenne tarpeisiin sopiviksi</p>
-							</div>
-						</div>
-						<div class="span4 tileOuter">
-							<div class="box tileImg">
-								<img src="img/savings.jpg">
-							</div>
-						</div>
-					</div-->
 				</div>
 			</div>
 			<!-- ------------------ -->
 			<!--     Palvelumme     -->
 			<!-- ------------------ -->
 			<div class="tab-pane" id="Palvelumme">
-				<div class="blueGrad largeBox">
+				<div class="largeBox">
 					<div class="tabbable"> <!-- Only required for left/right tabs -->
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Poistumanesto</a></li>
-							<li><a href="#tab2" data-toggle="tab">Telemarkkinointi</a></li>
-							<li><a href="#tab3" data-toggle="tab">Myynnin kehitys</a></li>
+						<ul id="palvelummeTabs" class="nav nav-tabs">
+							<li class="active"><a href="#poistumanestoTab" data-toggle="tab">Poistumanesto</a></li>
+							<li><a href="#myynninKehitysTab" data-toggle="tab">Myynnin kehitys</a></li>
+							<li><a href="#telemarkkinointiTab" data-toggle="tab">Telemarkkinointi</a></li>
 						</ul>
 						<div class="tab-content">
-							<div class="tab-pane active" id="tab1">
+							<div class="tab-pane active" id="poistumanestoTab">
 								<p>
 									<div class="problem">Moni yritys n&auml;kee poistuvat asiakkaat vain negatiivisina lukuina.</div>
 									<div class="solution">Laadukkaalla poistumanestolla pystymme muuttamaan yrityksesi negatiiviset luvut tuottaviksi sek&auml; pitk&auml;kestoisiksi asiakassuhteiksi.</div>
@@ -158,26 +140,28 @@
 									</a>
 								</p>
 							</div>
-							<div class="tab-pane" id="tab2">
+							<div class="tab-pane" id="myynninKehitysTab">
 								<p>
-									<ul>
-										<li>Asiakashankinta sek&auml; vanhojen asiakassuhteiden syvent&auml;minen miellet&auml;&auml;n monessa yrityksess&auml; viel&auml; t&auml;n&auml;kin p&auml;iv&auml;n&auml; kalliiksi ja hankalaksi toteuttaa.</li>
-										<li>Meid&auml;n kanssamme toteutettu telemarkkinointi on helppo sek&auml; kustannustehokas keino tavoittaa yrityksesi vanhat ja uudet asiakkaat.</li>
-										<li>Usein yritykset kokevat telemarkkinoinnin aggressiivisena ja ep&auml;mukavana tapana l&auml;hesty&auml; asiakasta.</li>
-										<li>Juuri sinun yrityksellesi r&auml;&auml;t&auml;l&ouml;idyss&auml; oikein toteutetussa telemarkkinoinnissa kohtaavat niin hyv&auml;t tulokset kuin miellytt&auml;v&auml; asiakaskokemuskin.</li>
-										<li>Ota yhteytt&auml;! Laitetaan yhdess&auml; yrityksesi myynti kasvuun.</li>
-									</ul>
+									<div class="problem">Myynnin kehitys on asia jota mink&auml;&auml;n kokoisen yrityksen ei tulisi unohtaa, vaikka juuri nyt menisikin hyvin.</div>
+									<div class="solution">Kannamme huolen yrityksesi tuesta. Kanssamme toteutettu r&auml;&auml;t&auml;l&ouml;ity kehitysprojekti tai vaikkapa pitk&auml;j&auml;nteisempi yhteisty&ouml; takaa yrityksellesi liiketoiminnan kasvua t&auml;n&auml;&auml;n ja tulevaisuudessa.</div>
+									<div class="problem">Yrityksen sis&auml;lt&auml; on vaikea n&auml;hd&auml; kauas.</div>
+									<div class="solution">Vahvan myyntiosaamisen ja ulkopuolisen n&auml;kemyksen avulla tarjoamme yrityksellesi avaimet myynnin kehitt&auml;miseen. Tarvittaessa autamme myyntikoneistosi viritt&auml;misess&auml; k&auml;dest&auml; pit&auml;en.</div>
+									<br><br>
+									<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
+										Ota yhteytt&auml;! Maksimoidaan <br>yrityksesi myyntipotentiaali.
+									</a>
 								</p>
 							</div>
-							<div class="tab-pane" id="tab3">
+							<div class="tab-pane" id="telemarkkinointiTab">
 								<p>
-									<ul>
-										<li>Myynnin kehitys on asia jota mink&auml;&auml;n kokoisen yrityksen ei tulisi unohtaa, vaikka juuri nyt menisikin hyvin.</li>
-										<li>Kannamme huolen yrityksesi tuesta. Kanssamme toteutettu r&auml;&auml;t&auml;l&ouml;ity kehitysprojekti tai vaikkapa pitk&auml;j&auml;nteisempi yhteisty&ouml; takaa yrityksellesi liiketoiminnan kasvua t&auml;n&auml;&auml;n ja tulevaisuudessa.</li>
-										<li>Yrityksen sis&auml;lt&auml; on vaikea n&auml;hd&auml; kauas.</li>
-										<li>Vahvan myyntiosaamisen ja ulkopuolisen n&auml;kemyksen avulla tarjoamme yrityksellesi avaimet myynnin kehitt&auml;miseen. Tarvittaessa autamme myyntikoneistosi viritt&auml;misess&auml; k&auml;dest&auml; pit&auml;en.</li>
-										<li>Ota yhteytt&auml;! Maksimoidaan yrityksesi myyntipotentiaali.</li>
-									</ul>
+									<div class="problem">Asiakashankinta sek&auml; vanhojen asiakassuhteiden syvent&auml;minen miellet&auml;&auml;n monessa yrityksess&auml; viel&auml; t&auml;n&auml;kin p&auml;iv&auml;n&auml; kalliiksi ja hankalaksi toteuttaa.</div>
+									<div class="solution">Meid&auml;n kanssamme toteutettu telemarkkinointi on helppo sek&auml; kustannustehokas keino tavoittaa yrityksesi vanhat ja uudet asiakkaat.</div>
+									<div class="problem">Usein yritykset kokevat telemarkkinoinnin aggressiivisena ja ep&auml;mukavana tapana l&auml;hesty&auml; asiakasta.</div>
+									<div class="solution">Juuri sinun yrityksellesi r&auml;&auml;t&auml;l&ouml;idyss&auml; oikein toteutetussa telemarkkinoinnissa kohtaavat niin hyv&auml;t tulokset kuin miellytt&auml;v&auml; asiakaskokemuskin.</div>
+									<br><br>
+									<a class="otaYhteyttaBtn btn btn-large btn-primary pull-right" type="button">
+										Ota yhteytt&auml;! Laitetaan yhdess&auml; <br>yrityksesi myynti kasvuun.
+									</a>
 								</p>
 							</div>
 						</div>
@@ -204,14 +188,13 @@
 					<h2>Yhteystiedot</h2>
 					<address>
 						<strong>Kaari Solutions Oy</strong><br>
-						Tikkurilantie 11 22 A<br>
-						01234 Vantaa, Finland<br>
-						<abbr title="Phone">P:</abbr> +358 40 123 4567
+						Kunnaantie 15 i<br>
+						01370 Vantaa, Finland<br>
+						<br>
+						Puh: 010 235 7555
 					</address>
-
 					<address>
-						<strong>Harri Pellikka </strong><br>
-						<a href="mailto:#">harri.pellikka (a) kaarisolutions.com</a>
+						<a href="mailto:#">Info@kaarisolutions.fi</a>
 					</address>
 				</div>
 			</div>
@@ -235,54 +218,9 @@
 							
 						</div>
 					</form>
-					<!--input class="send" type="submit" value="L&auml;het&auml;" class="btn btn-primary pull-right"-->
-					<!--?php
-				        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
-						elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  		
-					?>  
-					<form class="span8" method="POST" action="contactForm.php">
-						<fieldset>
-							<div class="row form">
-								<div class="span3">
-									<input type="text" class="span3" name="contact_name" type="text" placeholder="Nimi">
-									<input type="text" class="span3" name="contact_email" type="text" placeholder="Email">
-								</div>
-								<div class="span5">
-									<textarea name="contact_message" id="message" class="input-xlarge span5" rows="8" placeholder="Viesti">
-									</textarea>
-								</div>
-								<input type="hidden" name="save" value="contact">  
-								<button name="save" id="save" type="submit" class="btn btn-primary pull-right">
-									L&auml;het&auml;
-								</button>
-							</div>
-						</fieldset>
-					</form-->
-					<!--form method="POST" action="contactForm.php">
-						<fieldset>
-							<div class="row form form-horizontal">
-								<div class="span6 box">
-									<input id="name" class="name" name="contact_name" type="text" placeholder="Name">
-									<input id="email" class="mail" name="contact_email" type="text" placeholder="Email">
-									<input id="phone" class="phone" name="contact_phone" type="text" placeholder="Phone">
-								</div>
-								<div id="message" class="span6 box box_r">
-									<textarea name="contact_message" placeholder="Type a message here..."></textarea>
-								</div>
-							</div>
-							<div class="row submit">
-								<div class="span3 right">
-									<input name="save" id="save" type="submit" value="Send your message">
-								</div>
-							</div>
-						</fieldset>
-					</form-->
 				</div>
 			</div>
 		</div>
-		<!--footer id="footer">
-			<p>&copy; Kaari Solutions</p>
-		</footer-->
 	</div>
 	<!-- Le javascript  
 	================================================== -->  
@@ -303,12 +241,13 @@
 	$('#pienennammeBox').click(function(){
 		$('#palvelummeTab').trigger('click');
 	});
-	$('#tavoitammeBox').click(function(){
-		$('#palvelummeTab').trigger('click');
-	});
 	$('#raataloimmeBox').click(function(){
 		$('#palvelummeTab').trigger('click');
 	});
+	$('#tavoitammeBox').click(function(){
+		$('#palvelummeTab').trigger('click');
+	});
+
 	</script>
 
 </body>  

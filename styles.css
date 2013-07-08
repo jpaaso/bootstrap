@@ -1,16 +1,4 @@
-/*
-customer service: 866px 577px
-handshake:        878px 569px
-savings: 		  791px 632px 
-
-pienimmät (w h):  791px 569px
-tile (w h): 	  295px 190px
-*/
-
 body { 
-	/*background-color:#F2F2F2; */
-	/*font-family: HelveticaLight, Helvetica, Arial;*/
-	/*font-family: Muli, 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Tahoma, Arial, sans-serif;*/
 	font-family: "Avenir LT W01 35 Light", sans-serif;
 	font-size:18px;
 	color: rgb(70, 68, 64);/*#424242;*/
@@ -36,17 +24,25 @@ h1, h2, h3, h4, h5 {
 	min-height: 100px;
 	margin: -35px 0px 0px 0px;
 }
-.tabList .nav-pills {
+#tabs {
    	margin: 10px 0px 30px 0px; /* trbl */
 	text-transform:uppercase;
 }
+#palvelummeTabs {
+	text-transform:uppercase;
+}
+#palvelummeTabs a not(.active) {
+	/*color:#F5F5F5;*/
+	background:#F5F5F5;
+}
 .problem {
 	font-style:italic;
-	margin-top: 20px;
-
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 .solution {
 	/*text-align:right;*/
+	/*font-weight:bold;*/
 	margin-left: 50px;
 	margin-top: 5px;
 }

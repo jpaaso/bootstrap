@@ -31,22 +31,38 @@ h1, h2, h3, h4, h5 {
 #palvelummeTabs {
 	text-transform:uppercase;
 }
+/*
 #palvelummeTabs a not(.active) {
-	/*color:#F5F5F5;*/
 	background:#F5F5F5;
+}*/
+.modTab a {
+	background-color:rgba(255, 255, 255, 0.5);
 }
+.modTab .active a {
+	background-color:rgba(255, 255, 255, 0.1);
+}
+.modTab .active a:hover {
+}
+
 .problem {
 	font-style:italic;
 	margin-top: 30px;
 	margin-bottom: 10px;
+	font-size: 22px;
+	line-height: 120%;
 }
 .solution {
 	/*text-align:right;*/
 	/*font-weight:bold;*/
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 	margin-top: 5px;
+	font-size: 22px;
+	line-height: 120%;
+	/*text-transform:uppercase;*/
 }
-
+.solution li {
+	line-height: 120%;
+}
 .blueGrad {
 	background-image: -moz-linear-gradient(67% 2% -153deg, #00bdde 1%, #00528c 99%);
 	background-image: -webkit-gradient(linear, 67% 2%, 1% 98%, color-stop(0.01, #00bdde), color-stop(0.99, #00528c));
@@ -61,22 +77,41 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 0px;
 	color:#fff;
 }
+.padding {
+	padding: 20px 30px;
+}
+
 .carousel p {
 	font-size: 40px;
 	text-transform:uppercase;
 	line-height: 120%;
 }
 
-.carousel-inner {
+#myCarousel .carousel-inner {
 	width: auto;
 	min-height: 300px;
 	height: auto !important;
     height: 300px; 
 }
-/* carousel item */
-.item {
+
+#palvelummeCarousel .carousel-inner {
+	width: auto;
+	min-height: 450px;
+	height: auto !important;
+    height: 450px; 
+}
+.palvelummeHeader {
+	text-transform:uppercase;
+	font-size: 30px;
+}
+/* main carousel item margin */
+.headerMargin {
 	margin: 70px 20px 20px 70px;
 }
+.textMargin {
+	margin: 30px 70px 10px 70px; /* trbl */
+}
+
 .box {
 	background-color:#F5F5F5;
 }
